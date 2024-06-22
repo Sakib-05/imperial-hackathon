@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Picture - Dentist Volunteer Program</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styling for the upload page */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+        }
+        #upload-form {
+            width: 500px;
+            height: 500px;
+            margin: 2em auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+            background-color: #f9f9f9;
+        }
+        #upload-form label, 
+        #upload-form input {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5em;
+        }
+        #upload-form button {
+            display: block;
+            width: 100%;
+            background-color: green;
+            color: white;
+            padding: 0.5em;
+            border: none;
+            border-radius: 0.5em;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        #upload-form button:hover {
+            background-color: darkgreen;
+        }
+        #preview {
+            display: block;
+            width: 100%;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 0.5em;
+            text-align: center;
+            padding: 0.5em;
+            background-color: #fff;
+        }
+        #preview img {
+            max-width: 100%;
+            border-radius: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Upload Picture</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cases.html">cases</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="upload-form">
+            <h2>Upload Your Picture</h2>
+            
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="case">Please provide details of the case:</label>
+                <input type="text" id="case" name="case" required>
+                
+                <label for="picture">Choose a picture to upload:</label>
+                <input type="file" id="picture" name="picture" accept="image/*" required>
+                
+                <div id="preview">
+                    <p>No image selected</p>
+                </div>
+                
+                <button type="submit" id="button">Register Case</button>
+            
+        </section>
+    </main>
+
+    <script>
