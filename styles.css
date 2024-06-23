@@ -85,12 +85,9 @@ form button:hover {
 }
 
 .details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-left: 200px;
     margin-top: -200px;
-    font-size: 20px;
-    line-height: 20px
+   
 }
 .profiles{
     background-color: rgb(218, 218, 218);
